@@ -1,0 +1,214 @@
+body {
+	font-weight: 400;
+	line-height: 1.5;
+	color: #333;
+}
+/**********************
+Navbar
+***********************/
+.navbar {
+	background-color: #fff;
+	box-shadow: 0px 1px 5px rgba(0,0,0,0.15);
+}
+.navbar img {
+	max-width: 150px;
+	height: 100px;
+}
+.navbar-collapse {
+	    justify-content: flex-end;
+}
+.navbar-toggler {
+	background-color: #F50212;
+	
+}
+/**********************
+Navbar
+***********************/
+.carousel-item {
+	background: -webkit-linear-gradient(left, rgba(115,41,110,0.2), rgba(115,41,110,0.2)), url(../images/office_pics/parade_4.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 670px;
+	background-position:  0% 0%;
+}
+.carousel-item.second-img {
+	background: -webkit-linear-gradient(left, rgba(115,41,110,0.2), rgba(115,41,110,0.2)), url(../images/eagle_watch/Patrol_Fleet.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 670px;
+	background-position:  100% 90%;
+	
+}
+.carousel-item.third-img{
+	background: -webkit-linear-gradient(left, rgba(115,41,110,0.2), rgba(115,41,110,0.2)), url(../images/eagle_watch/Morning_Parade.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: ;
+	background-position: 100% 50%;
+}
+
+/**********************
+Typography
+***********************/
+
+p, li {
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 1.3em;
+	font-size: 1em;
+}
+h1,h2,h3,h4 {
+	font-family: 'Merriweather', serif;
+}
+
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.157em;
+}
+
+h2 {font-size: 2.369em;}
+
+h3 {font-size: 1.777em;}
+
+h4 {font-size: 1.333em;}
+
+small, .font_small {
+	font-size: 0.75em;
+}
+ul {
+	list-style: none;
+	padding-left: 0;
+}
+li, .customer-list p, .commitment-list {
+	font-weight: 600;
+}
+.branch-numbers ul li {
+	font-weight: 400;
+}
+.branch-numbers h3 {
+}
+.customer-list p , .commitment-list p {
+	box-shadow: 0 2px 4px rgba(50,50,93,.1);
+	background-color: #fff;
+	display: flex;
+	align-items: center;
+	padding: 15px;
+	border-radius: 2px;
+	min-height: 78px;
+}
+.row.commitment-list .col-sm-6:nth-child(1) .fa {
+	position: relative;
+	top: -11px;
+}
+.quote .section-heading, .quote blockquote  {
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.quote .section-heading, .quote blockquote  {
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.quote blockquote {
+	font-family: 'Open Sans'. sans-serif;
+	font-style: italic;
+	font-size: 2.3em;
+	margin-top: 35px;
+}
+/**********************
+Colors
+***********************/
+section.customers, .commitment, .affiliations{
+	background-color: #FAF9F9;
+}
+ul.services-list .fa, .customer-list .fa, .commitment .fa {
+	padding-right: 10px;
+	color: #C3020E;
+	font-size: 1.2em;
+}
+/**********************
+Buttons
+***********************/
+.btn {
+	background-color: #F50212;
+	color: #fff;
+	font-family: 'Open Sans'. sans-serif;
+	font-weight: 600;
+	border-radius: 4px;
+	box-shadow: 0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08);
+	
+}
+/**********************
+Spacing
+***********************/
+.services, .customers, .quote, .commitment, .cost, .affiliations, .contacts{
+	padding: 70px 0;
+}
+.customers .section-heading, .commitment .section-heading, .affiliations .section-heading, .contacts .section-heading {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-bottom: 40px;
+}
+footer .navbar{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	box-shadow: none;
+}
+.customer-list, .commitment-list {
+	margin-bottom: 20px;
+}
+.cost .section-heading {
+	margin-top: 70px;
+}
+div.quote-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/**********************
+Images
+***********************/
+img {
+	max-width: 100%;
+}
+.services img {
+	position: relative;
+	height: 600px;
+	box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
+	border-radius: 2px;
+	z-index: 1;
+}
+.quote {
+	margin-top: -50px;
+	background: -webkit-linear-gradient(left, rgba(49, 24, 131,0.9), rgba(49, 24, 131,0.9)), url(../images/eagle_watch/Group_Photo_After_Training.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 400px;
+	background-position:  100% 50%;
+}
+.cost img{
+	box-shadow: 0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08);
+}
+.affiliations-logos .img-box {
+	box-shadow: 0 2px 4px rgba(50,50,93,.1);
+	background-color: #fff;
+	min-height: 250px;	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 4px;
+}
