@@ -150,10 +150,12 @@ Buttons
 /**********************
 Spacing
 ***********************/
-.services, .customers, .quote, .commitment, .cost, .affiliations, .contacts{
+.services, .customers, .quote, .commitment, .cost, 
+.affiliations, .contacts, .our-team{
 	padding: 70px 0;
 }
-.customers .section-heading, .commitment .section-heading, .affiliations .section-heading, .contacts .section-heading {
+.customers .section-heading, .commitment .section-heading,
+ .affiliations .section-heading, .contacts .section-heading{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -200,8 +202,8 @@ img {
 	height: 400px;
 	background-position:  100% 50%;
 }
-.cost img{
-	box-shadow: 0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08);
+.cost img, .our-team img{
+	box-shadow: -3px 4px 6px rgba(50,50,93,.11), -2px 1px 3px rgba(0,0,0,.08);
 }
 .affiliations-logos .img-box {
 	box-shadow: 0 2px 4px rgba(50,50,93,.1);
