@@ -68,23 +68,21 @@ h1, h2, h3, h4 {
 
 h1 {
   margin-top: 0;
-  font-size: 3.157em;
+  font-size: 2.074em;
 }
 
-h2 {font-size: 2.369em;}
+h2 {font-size: 1.728em;}
 
-h3 {font-size: 1.777em;}
+h3 {font-size: 1.44em;}
 
-h4 {font-size: 1.333em;}
+h4 {font-size: 1.2em;}
 
-small, .font_small {
-	font-size: 0.75em;
-}
+small, .font_small {font-size: 0.833em;}
 ul {
 	list-style: none;
 	padding-left: 0;
 }
-li, .customer-list p, .commitment-list {
+li, .customer-list p, .commitment-list, .training-list p {
 	font-weight: 600;
 }
 .branch-numbers ul li {
@@ -92,7 +90,7 @@ li, .customer-list p, .commitment-list {
 }
 .branch-numbers h3 {
 }
-.customer-list p , .commitment-list p {
+.customer-list p , .commitment-list p, .training-list p, .going-list p {
 	box-shadow: 0 2px 4px rgba(50,50,93,.1);
 	background-color: #fff;
 	display: flex;
@@ -127,10 +125,10 @@ li, .customer-list p, .commitment-list {
 /**********************
 Colors
 ***********************/
-section.customers, .commitment, .affiliations{
+section.customers, .commitment, .affiliations, .training, .going{
 	background-color: #FAF9F9;
 }
-ul.services-list .fa, .customer-list .fa, .commitment .fa {
+ul.services-list .fa, .customer-list .fa, .commitment .fa, .training-list .fa, .going-list .fa {
 	padding-right: 10px;
 	color: #C3020E;
 	font-size: 1.2em;
@@ -151,11 +149,11 @@ Buttons
 Spacing
 ***********************/
 .services, .customers, .quote, .commitment, .cost, 
-.affiliations, .contacts, .our-team{
+.affiliations, .contacts, .our-team, .training, .going{
 	padding: 70px 0;
 }
 .customers .section-heading, .commitment .section-heading,
- .affiliations .section-heading, .contacts .section-heading{
+ .affiliations .section-heading, .contacts .section-heading, .training .section-heading, .going .section-heading{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -170,7 +168,7 @@ footer .navbar{
 	align-items: center;
 	box-shadow: none;
 }
-.customer-list, .commitment-list {
+.customer-list, .commitment-list, .training-list, .going-list {
 	margin-bottom: 20px;
 }
 .cost .section-heading {
@@ -180,6 +178,9 @@ div.quote-btn {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+.training .row.Training_completion, .going_completion {
+	margin-top: 70px;
 }
 /**********************
 Images
