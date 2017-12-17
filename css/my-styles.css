@@ -12,15 +12,22 @@ Navbar
 	height: 90px;
 }
 .navbar img {
-	max-width: 150px;
-	height: 80px;
-	margin-top: 5px;
+	max-width: 120px;
+	height: 70px;
+	margin-top: 0px;
 }
 .navbar-collapse {
 	    justify-content: flex-end;
 }
-.navbar-toggler {
-	background-color: #F50212;
+.navbar-toggler-icon {
+	border: 2px solid #F50212;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 2px;
+}
+.navbar-toggler-icon .fa {
+	color: #F50212;
 }
 .nav-item a {
 	font-family: 'Open Sans', sans-serif;
@@ -195,8 +202,13 @@ section.customers, .commitment, .affiliations, .training, .going,
 .core-values, .organization, body.about-page, body.services-page, footer .navbar-expand-md, footer{
 	background-color: #FAFafa;
 }
-.who-we-are,.contacts, .our-team {
+.who-we-are,.contacts, .our-team, .navbar-collapse {
 	background-color: #fff;
+	z-index: 1000;
+	padding-bottom: 10px;
+}
+.navbar-collapse li {
+	display: flex;
 }
 ul.services-list .fa, .customer-list .fa, .commitment .fa, .training-list .fa, 
 .going-list .fa, .organization-list .fa {
@@ -253,13 +265,13 @@ Spacing
 	width: 79.0321929825%;
 	padding: 20px 0;
 }
-.section-sub-heading p, .who-we-are-text p {
+.section-sub-heading p, .who-we-are .who-we-are-text{
 	padding: 20px 0;
 }
 p.section-heading-p, .vision .section-heading p  {
 	width: 100%;
 }
-footer{
+footer {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -272,19 +284,12 @@ footer .navbar-expand-md {
 .services-list li, .customer-list, .commitment-list, .training-list, .going-list, .organization-list {
 	margin-bottom: 10px;
 }
-.cost .section-heading, .section-sub-heading, .who-we-are h1,
+.cost .section-heading, .section-sub-heading,
 .organization_completion{
 	margin-top: 60px;
 }
 .organization_completion, .training_completion, .row.going_completion{
 	margin-top: 14.0350877193%;
-}
-.who-we-are-text {
-	width: 70%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 }
 .our-team .section-heading {
 	margin-top: 30px;
@@ -417,6 +422,15 @@ Media Queries
 	font-weight: 700;
 	margin: 0 0px 50px;
 }
+	.customer-list p , .commitment-list p, .training-list p, 
+	.going-list p, .organization-list p {
+		flex-wrap: wrap;
+		padding: 15px;
+	}
+	ul.services-list .fa, .customer-list .fa, .commitment .fa, .training-list .fa, 
+	.going-list .fa, .organization-list .fa {
+		padding-bottom: 5px;
+	}
 	.training_completion .section-sub-heading, .going_completion .section-sub-heading,
 	.vision .section-heading, .organization_completion .section-sub-heading{
 		top: -100px;
@@ -429,7 +443,10 @@ Media Queries
 		margin-bottom: 20px;
 		
 	}
-	.core-text {
+	.branch-numbers ul {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 }
 
