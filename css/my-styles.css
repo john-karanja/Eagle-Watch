@@ -1,50 +1,115 @@
 body {
 	font-weight: 400;
-	line-height: 1.5;
-	color: #333;
+	line-height: 1.75;
+	color: #36373f;
 }
 /**********************
 Navbar
 ***********************/
 .navbar {
 	background-color: #fff;
-	box-shadow: 0px 1px 5px rgba(0,0,0,0.15);
+	box-shadow: 0px 10px 5px rgba(0,0,0,0.15);
+	height: 90px;
 }
 .navbar img {
 	max-width: 150px;
-	height: 100px;
+	height: 80px;
+	margin-top: 5px;
 }
 .navbar-collapse {
 	    justify-content: flex-end;
 }
 .navbar-toggler {
 	background-color: #F50212;
-	
+}
+.nav-item a {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	color: #2b2c3c;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+.nav-item .nav-contact {
+	border: 2px solid #F50212;
+	color: #F50212;
+	border-radius: 3px;
+
 }
 /**********************
-Navbar
+Carousel
 ***********************/
 .carousel-item {
-	background: -webkit-linear-gradient(left, rgba(115,41,110,0.2), rgba(115,41,110,0.2)), url(../images/office_pics/parade_4.jpg);
+	background: -webkit-linear-gradient(left, rgba(16, 20, 97,0.4), rgba(16, 20, 97,0.4)), url(../images/eagle_watch/edited/Dog_Deployment_1.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 670px;
-	background-position:  0% 0%;
+	background-position:  100% 80%;
 }
 .carousel-item.second-img {
-	background: -webkit-linear-gradient(left, rgba(115,41,110,0.2), rgba(115,41,110,0.2)), url(../images/eagle_watch/Patrol_Fleet.jpg);
+	background: -webkit-linear-gradient(left, rgba(16, 20, 97,0.4), rgba(16, 20, 97,0.4)), url(../images/eagle_watch/edited/Patrol_Fleet_1.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 670px;
-	background-position:  100% 90%;
+	background-position:  100% 80%;
 	
 }
 .carousel-item.third-img{
-	background: -webkit-linear-gradient(left, rgba(115,41,110,0.2), rgba(115,41,110,0.2)), url(../images/eagle_watch/Morning_Parade.jpg);
+	background: -webkit-linear-gradient(left, rgba(16, 20, 97,0.4), rgba(16, 20, 97,0.4)), url(../images/eagle_watch/edited/Rapid_Response_Team_1.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: ;
-	background-position: 100% 50%;
+	background-position: 100% 20%;
+}
+.carousel-caption {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	bottom: 150px;
+	
+}
+.carousel-caption h1, .jumbotron-fluid h1 {
+	font-size: 3.5em;
+}
+.carousel-caption p, .jumbotron-fluid p {
+	font-weight: 400;
+	font-size: 1.3em;
+	width: 80%;
+	padding: 10px;
+	color: #fff;
+
+}
+/**********************
+Jumbotron
+***********************/
+.jumbotron-fluid {
+	background: -webkit-linear-gradient(left, rgba(16, 20, 97,0.5), rgba(16, 20, 97,0.5)), url(../images/eagle_watch/Guard_on_Radio_Call_1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 670px;
+	background-position:  50% 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.jumbo-about {
+	background: -webkit-linear-gradient(left, rgba(16, 20, 97,0.5), rgba(16, 20, 97,0.5)), url(../images/eagle_watch/edited/Group_Photo_After_Training_1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 670px;
+	background-position:  50% 40%;
+	
+}
+.jumbotron-fluid h1 {
+	font-size: 3em;
+	color: #fff;
+}
+.jumbotron-fluid .container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
 /**********************
@@ -53,20 +118,20 @@ Typography
 
 p, li {
 	font-family: 'Open Sans', sans-serif;
-	margin-bottom: 1.3em;
-	font-size: 1em;
+	font-size: 0.97em;
 }
 h1,h2,h3,h4 {
 	font-family: 'Merriweather', serif;
 }
 
 h1, h2, h3, h4 {
-  margin: 1.414em 0 0.5em;
   font-weight: inherit;
   line-height: 1.2;
+	margin-bottom: 0
 }
 
 h1 {
+	
   margin-top: 0;
   font-size: 2.074em;
 }
@@ -77,31 +142,25 @@ h3 {font-size: 1.44em;}
 
 h4 {font-size: 1.2em;}
 
-small, .font_small {font-size: 0.833em;}
 ul {
 	list-style: none;
 	padding-left: 0;
 }
-li, .customer-list p, .commitment-list, .training-list p {
+li, .customer-list p, .commitment-list, .training-list p, 
+.organization-list p, .going-list p {
 	font-weight: 600;
+}
+.branch-numbers ul {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
 }
 .branch-numbers ul li {
 	font-weight: 400;
+	margin: 10px 0;
 }
 .branch-numbers h3 {
-}
-.customer-list p , .commitment-list p, .training-list p, .going-list p {
-	box-shadow: 0 2px 4px rgba(50,50,93,.1);
-	background-color: #fff;
-	display: flex;
-	align-items: center;
-	padding: 15px;
-	border-radius: 2px;
-	min-height: 78px;
-}
-.row.commitment-list .col-sm-6:nth-child(1) .fa {
-	position: relative;
-	top: -11px;
+	margin: 10px 0;
 }
 .quote .section-heading, .quote blockquote  {
 	color: #fff;
@@ -120,18 +179,39 @@ li, .customer-list p, .commitment-list, .training-list p {
 	font-family: 'Open Sans'. sans-serif;
 	font-style: italic;
 	font-size: 2.3em;
-	margin-top: 35px;
+	font-weight: 700;
+	margin: 0 0px 50px;
+}
+.quote p {
+	font-size: 1.1em
+}
+.core-text h3 {
+	margin-bottom: 14px;
 }
 /**********************
 Colors
 ***********************/
-section.customers, .commitment, .affiliations, .training, .going{
-	background-color: #FAF9F9;
+section.customers, .commitment, .affiliations, .training, .going,
+.core-values, .organization, body.about-page, body.services-page, footer .navbar-expand-md, footer{
+	background-color: #FAFafa;
 }
-ul.services-list .fa, .customer-list .fa, .commitment .fa, .training-list .fa, .going-list .fa {
+.who-we-are,.contacts, .our-team {
+	background-color: #fff;
+}
+ul.services-list .fa, .customer-list .fa, .commitment .fa, .training-list .fa, 
+.going-list .fa, .organization-list .fa {
 	padding-right: 10px;
 	color: #C3020E;
 	font-size: 1.2em;
+}
+.core-text {
+	background-color: #fff;
+	min-height: auto;
+	padding: 50px 20px;
+	text-align: center;
+}
+hr {
+	border-color: #DFDFDF;
 }
 /**********************
 Buttons
@@ -141,38 +221,73 @@ Buttons
 	color: #fff;
 	font-family: 'Open Sans'. sans-serif;
 	font-weight: 600;
-	border-radius: 4px;
-	box-shadow: 0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08);
+	border-radius: 2px;
+	box-shadow: 0 7px 14px rgba(50,50,93,.1),0 3px 6px rgba(0,0,0,.08);
+	padding: 10px 15px; 
+	min-width: 35%;
 	
 }
 /**********************
 Spacing
 ***********************/
 .services, .customers, .quote, .commitment, .cost, 
-.affiliations, .contacts, .our-team, .training, .going{
+.affiliations, .contacts, .our-team, .training, .going,
+.vision,.core-values, .organization, .quote, .who-we-are{
 	padding: 70px 0;
 }
 .customers .section-heading, .commitment .section-heading,
- .affiliations .section-heading, .contacts .section-heading, .training .section-heading, .going .section-heading{
+ .affiliations .section-heading, .contacts .section-heading, 
+.training .section-heading, .going .section-heading, .core-values .section-heading,
+.organization .section-heading, 
+.sub-heading{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+}
+.sub-heading {
 	margin-bottom: 40px;
 }
-footer .navbar{
+.section-heading p {
+	width: 79.0321929825%;
+	padding: 20px 0;
+}
+.section-sub-heading p, .who-we-are-text p {
+	padding: 20px 0;
+}
+p.section-heading-p, .vision .section-heading p  {
+	width: 100%;
+}
+footer{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	box-shadow: none;
 }
-.customer-list, .commitment-list, .training-list, .going-list {
-	margin-bottom: 20px;
+footer .navbar-expand-md {
+	box-shadow: none;
 }
-.cost .section-heading {
-	margin-top: 70px;
+.services-list li, .customer-list, .commitment-list, .training-list, .going-list, .organization-list {
+	margin-bottom: 10px;
+}
+.cost .section-heading, .section-sub-heading, .who-we-are h1,
+.organization_completion{
+	margin-top: 60px;
+}
+.organization_completion, .training_completion, .row.going_completion{
+	margin-top: 14.0350877193%;
+}
+.who-we-are-text {
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.our-team .section-heading {
+	margin-top: 30px;
 }
 div.quote-btn {
 	display: flex;
@@ -181,6 +296,27 @@ div.quote-btn {
 }
 .training .row.Training_completion, .going_completion {
 	margin-top: 70px;
+}
+.contacts img {
+	margin-bottom: 20px;
+}
+footer p {
+	margin-bottom: 0;
+	padding-bottom: 10px;
+	display: flex;
+	justify-content: center;
+	font-size: 0.8em;
+	color: rgb(43, 44, 60, 0.7);
+}
+.no-gutters {
+  margin-right: 0px;
+  margin-left: 0px;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
 }
 /**********************
 Images
@@ -196,22 +332,104 @@ img {
 	z-index: 1;
 }
 .quote {
-	margin-top: -50px;
-	background: -webkit-linear-gradient(left, rgba(49, 24, 131,0.9), rgba(49, 24, 131,0.9)), url(../images/eagle_watch/Group_Photo_After_Training.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	height: 400px;
-	background-position:  100% 50%;
-}
-.cost img, .our-team img{
-	box-shadow: -3px 4px 6px rgba(50,50,93,.11), -2px 1px 3px rgba(0,0,0,.08);
+	background: #101461;
 }
 .affiliations-logos .img-box {
-	box-shadow: 0 2px 4px rgba(50,50,93,.1);
+	box-shadow: 0 15px 35px rgba(50,50,93,.01),0 5px 15px rgba(0,0,0,.07);
 	background-color: #fff;
-	min-height: 250px;	
+	min-height: 100%;	
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border-radius: 4px;
+	border-radius: 2px;
+	padding: 30px;
 }
+.who-we-are-pics img, .core-cards img{
+	min-height: auto;
+}
+/**********************
+Cards and Shadows
+***********************/
+.customer-list p , .commitment-list p, .training-list p, 
+.going-list p, .organization-list p {
+	position: relative;
+	z-index: 1000;
+	box-shadow: 0 15px 35px rgba(50,50,93,.01),0 5px 15px rgba(0,0,0,.05);
+	background-color: #fff;
+	display: flex;
+	align-items: baseline;
+	padding: 25px;
+	border-radius: 2px;
+	min-height: auto;
+}
+.core-cards, .vision .section-heading, .organization_completion .section-sub-heading,
+.training_completion .section-sub-heading, .going_completion .section-sub-heading{
+	position: relative;
+	z-index: 1000;
+	box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
+}
+.vision .section-heading, .organization_completion .section-sub-heading, .training_completion .section-sub-heading,
+.going_completion .section-sub-heading{
+	background-color: #fff;
+	padding: 40px;
+	height: auto;
+}
+.vision .section-heading {
+	top: 15.0526315789%;
+	right: 20.3684210526%;
+}
+.organization_completion .section-sub-heading {
+	top: -21.0526315789%;
+	right: 5.3684210526%;
+}
+.training_completion .section-sub-heading {
+	top: -20.8947368421%;
+	right: 16.8421052632%;
+}
+.going_completion .section-sub-heading {
+	top: -21.0526315789%;
+	right: 14.7368421053%;
+}
+/**********************
+Media Queries
+***********************/
+@media only screen  and (max-width: 992px) {
+	
+	.carousel-caption h1, .jumbotron-fluid h1 {
+	font-size: 3em;
+}
+	.carousel-caption p, .jumbotron-fluid p {
+	font-weight: 400;
+	font-size: 1.1em;
+	width: 100%;
+	color: #fff;
+}
+	.section-heading p {
+		width: 100%;
+	}
+	.services .btn, .section-heading button {
+		margin-bottom: 40px;
+	}
+	.quote blockquote {
+	font-family: 'Open Sans'. sans-serif;
+	font-style: italic;
+	font-size: 2em;
+	font-weight: 700;
+	margin: 0 0px 50px;
+}
+	.training_completion .section-sub-heading, .going_completion .section-sub-heading,
+	.vision .section-heading, .organization_completion .section-sub-heading{
+		top: -100px;
+		left: 2.5%;
+		width: 95%;
+  }
+	.core-cards {
+		width: 80%;
+		margin: 0 auto;
+		margin-bottom: 20px;
+		
+	}
+	.core-text {
+	}
+}
+
