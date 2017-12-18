@@ -28,13 +28,13 @@
 			        <a class="nav-link" href="index.html">Home</a>
 			      </li>
 			      <li class="nav-item">
-			        <a class="nav-link" href="#">Services</a>
+			        <a class="nav-link active" href="#">Services</a>
 			      </li>
 			      <li class="nav-item">
 			        <a class="nav-link" href="about.html">About</a>
 			      </li> 
 			      <li class="nav-item">
-			        <a class="nav-link nav-contact" href="#">Contacts</a>
+			        <a class="nav-link nav-contact" href="#contacts-link">Contacts</a>
 			      </li> 
 			    </ul>
 			  </div> 
@@ -58,7 +58,9 @@
 							<h1>Our Team</h1>
 							<p class="section-heading-p">Our key strength at EWG is in the selection of recruits, the vetting process, training and remuneration of the guards. We emphasis on Certificate of Good Conduct issued by the Directorate of Criminal Investigations (DCI)to ensure that those we employ have no criminal record. We also carry out our internal background checks of all potential candidates to ensure that there are no records of professional or ethical misconduct on any of them before we hire them.
 							</p>
+							<a href="#contacts-link">
 							<button class="btn btn-lg">Get In Touch</button>
+							</a>
 						</div>
 						
 					</div>
@@ -178,7 +180,9 @@
 							organization. We ensure that they are well equipped and adequately prepared to perform their duties at all times. This is 
 							accomplished through our experienced supervisors largely recruited from disciplined forces.  
 							</p>
+							<a href="#contacts-link">
 							<button class="btn btn-lg">Get In Touch</button>
+							</a>
 						</div>
 						
 					</div>
@@ -246,7 +250,9 @@
 							<h1>What we have done</h1>
 							<p>EWG has therefore taken a critical look at the challenges facing the general public and businesses and enhanced both skill and technology to offer diverse and proven solutions and expertise to customers that meet their short and long term private security concerns allowing them time to focus on their core businesses. 
 							</p>
+							<a href="#contacts-link">
 							<button class="btn btn-lg">Get In Touch</button>
+							</a>
 						</div>
 						
 					</div>
@@ -255,7 +261,7 @@
 		</section>
 
 		<!-- Contacts -->
-		<section class="contacts">
+		<section id="contacts-link" class="contacts">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-12">
@@ -325,8 +331,8 @@
 					      <li class="nav-item">
 					        <a class="nav-link" href="about.html">About</a>
 					      </li> 
-					      <li class="nav-item">
-					        <a class="nav-link" href="#">Contacts</a>
+					      <li id="" class="nav-item">
+					        <a class="nav-link" href="#contacts-link">Contacts</a>
 					      </li> 
 					    </ul>
 					</div> 
@@ -341,6 +347,44 @@
 
 		<!-- Latest compiled JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+				<script>
+			// Select all links with hashes
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+</script>
 
 	</body>
 </html>
