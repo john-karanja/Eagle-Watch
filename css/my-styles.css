@@ -1,7 +1,7 @@
 body {
 	font-weight: 400;
 	line-height: 1.75;
-	color: #36373f;
+	color: #070708;
 }
 /**********************
 Navbar
@@ -48,14 +48,14 @@ Navbar
 Carousel
 ***********************/
 .carousel-item {
-	background: -webkit-linear-gradient(left, rgba(16, 20, 97,0.4), rgba(16, 20, 97,0.4)), url(../images/eagle_watch/edited/Dog_Deployment_1.jpg);
+	background: -webkit-linear-gradient(left, rgba(16, 20, 97,0.45), rgba(16, 20, 97,0.45)), url(../images/eagle_watch/edited/Dog_Deployment_1_3.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 670px;
 	background-position:  100% 80%;
 }
 .carousel-item.second-img {
-	background: -webkit-linear-gradient(left, rgba(16, 20, 97,0.4), rgba(16, 20, 97,0.4)), url(../images/eagle_watch/edited/Patrol_Fleet_1.jpg);
+	background: -webkit-linear-gradient(left, rgba(16, 20, 97,0.45), rgba(16, 20, 97,0.5)), url(../images/eagle_watch/edited/Patrol_Fleet_1_2.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 670px;
@@ -63,7 +63,7 @@ Carousel
 	
 }
 .carousel-item.third-img{
-	background: -webkit-linear-gradient(left, rgba(16, 20, 97,0.4), rgba(16, 20, 97,0.4)), url(../images/eagle_watch/edited/Parade_Inspection_1.jpg);
+	background: -webkit-linear-gradient(left, rgba(16, 20, 97,0.45), rgba(16, 20, 97,0.45)), url(../images/eagle_watch/edited/Parade_Inspection_1_2.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: ;
@@ -74,7 +74,7 @@ Carousel
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	bottom: 150px;
+	bottom: 16%;
 	
 }
 .carousel-caption h1, .jumbotron-fluid h1 {
@@ -92,7 +92,7 @@ Carousel
 Jumbotron
 ***********************/
 .jumbotron-fluid {
-	background: -webkit-linear-gradient(left, rgba(16, 20, 97,0.5), rgba(16, 20, 97,0.5)), url(../images/eagle_watch/Guard_on_Radio_Call_1.jpg);
+	background: -webkit-linear-gradient(left, rgba(16, 20, 97,0.55), rgba(16, 20, 97,0.55)), url(../images/eagle_watch/Guard_on_Radio_Call_1_2.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 670px;
@@ -103,7 +103,7 @@ Jumbotron
 	text-align: center;
 }
 .jumbo-about {
-	background: -webkit-linear-gradient(left, rgba(16, 20, 97,0.5), rgba(16, 20, 97,0.5)), url(../images/eagle_watch/edited/Group_Photo_After_Training_1.jpg);
+	background: -webkit-linear-gradient(left, rgba(16, 20, 97,0.55), rgba(16, 20, 97,0.55)), url(../images/eagle_watch/edited/Group_Photo_After_Training_1.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 670px;
@@ -127,7 +127,7 @@ Typography
 
 p, li {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 0.97em;
+	font-size: 0.96em;
 }
 h1,h2,h3,h4 {
 	font-family: 'Merriweather', serif;
@@ -142,12 +142,12 @@ h1, h2, h3, h4 {
 h1 {
 	
   margin-top: 0;
-  font-size: 2.074em;
+  font-size: 2em;
 }
 
-h2 {font-size: 1.728em;}
+h2 {font-size: 1.6em;}
 
-h3 {font-size: 1.44em;}
+h3 {font-size: 1.4em;}
 
 h4 {font-size: 1.2em;}
 
@@ -166,7 +166,7 @@ li, .customer-list p, .commitment-list, .training-list p,
 }
 .branch-numbers ul li {
 	font-weight: 400;
-	margin: 10px 0;
+	margin: 5px 0;
 }
 .branch-numbers h3 {
 	margin: 10px 0;
@@ -238,8 +238,10 @@ Buttons
 	border-radius: 2px;
 	box-shadow: 0 7px 14px rgba(50,50,93,.1),0 3px 6px rgba(0,0,0,.08);
 	padding: 10px 15px; 
-	min-width: 35%;
-	
+	min-width: 40%;
+}
+.quote .quote-btn button{
+	min-width: 250px;
 }
 /**********************
 Spacing
@@ -260,7 +262,7 @@ Spacing
 	align-items: center;
 	text-align: center;
 }
-.sub-heading {
+.sub-heading, .services-list {
 	margin-bottom: 40px;
 }
 .section-heading p {
@@ -268,7 +270,7 @@ Spacing
 	padding: 20px 0;
 }
 .section-sub-heading p, .who-we-are .who-we-are-text{
-	padding: 20px 0;
+	padding: 20px 0px;
 }
 p.section-heading-p, .vision .section-heading p  {
 	width: 100%;
@@ -333,7 +335,7 @@ img {
 }
 .services img {
 	position: relative;
-	height: 600px;
+	height: auto;
 	box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
 	border-radius: 2px;
 	z-index: 1;
@@ -359,15 +361,13 @@ Cards and Shadows
 ***********************/
 .customer-list p , .commitment-list p, .training-list p, 
 .going-list p, .organization-list p {
-	position: relative;
-	z-index: 1000;
 	box-shadow: 1px 1px 15px rgba(50,50,93,.07), 1px 1px 15px rgba(0,0,0,.07);
 	background-color: #fff;
-	display: flex;
+	display: flex;	
 	align-items: baseline;
-	padding: 25px;
+	padding: 25px 25px;
 	border-radius: 2px;
-	min-height: auto;
+  height: 85%;
 	transition: .3s;
 }
 .core-cards, .vision .section-heading, .organization_completion .section-sub-heading,
@@ -390,15 +390,15 @@ Cards and Shadows
 }
 .organization_completion .section-sub-heading {
 	top: -21.0526315789%;
-	right: 5.3684210526%;
+	right: 1%;
 }
 .training_completion .section-sub-heading {
 	top: -20.8947368421%;
-	right: 16.8421052632%;
+	right: 10%;
 }
 .going_completion .section-sub-heading {
 	top: -21.0526315789%;
-	right: 14.7368421053%;
+	right: 10%;
 }
 /**********************
 Transitions
@@ -414,7 +414,7 @@ Transitions
 }
 
 .btn {
-	box-shadow: 5px 15px 5px rgba(50,50,93,.2), 5px 15px 5px rgba(0,0,0,.2);
+	box-shadow: 5px 5x 5px rgba(50,50,93,.2), 5px 5px 5px rgba(0,0,0,.2);
 	transition: .3s;
 }
 
@@ -477,7 +477,7 @@ Media Queries
 		width: 95%;
   }
 	.core-cards {
-		width: 80%;
+		width: 95%;
 		margin: 0 auto;
 		margin-bottom: 20px;
 		
@@ -488,4 +488,60 @@ Media Queries
 		align-items: center;
 	}
 }
+@media only screen  and (max-width: 768px) {
+	.carousel-caption h1, .jumbotron-fluid h1 {
+	font-size: 2.5em;
+  }
+		.carousel-caption p, .jumbotron-fluid p {
+	font-weight: 400;
+	font-size: 1em;
+	width: 100%;
+	color: #fff;
+  }
+	.quote blockquote {
+	font-size: 1.6em;
+}
+	h1 {
+	
+  margin-top: 0;
+  font-size: 1.8em;
+}
 
+h2 {font-size: 1.4em;}
+
+h3 {font-size: 1.2em;}
+
+h4 {font-size: 1.1em;}
+}
+@media only screen  and (max-width: 576px) {
+	.carousel-caption h1, .jumbotron-fluid h1 {
+	font-size: 2em;
+  }
+	.core-cards {
+		width: 90%;
+	}
+	.vision .section-heading, .organization_completion .section-sub-heading, .training_completion .section-sub-heading,
+.going_completion .section-sub-heading{
+	background-color: #fff;
+	padding: 40px 20px;
+}
+}
+
+@media only screen  and (max-width: 440px) {
+	.carousel-item {
+	background-position:  50% 80%;
+}
+	.carousel-item.second-img {
+	background-position:  50% 80%;
+  }
+	.carousel-item.third-img {
+	background-position:  40% 80%;
+  }
+}
+	
+	
+	
+	
+	
+	
+	
