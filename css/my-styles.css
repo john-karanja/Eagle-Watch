@@ -372,7 +372,7 @@ img {
 	min-height: auto;
 }
 .our-team img {
-	min-height: 370px;
+	height: 370px;
 	margin-top: 10px;
 }
 /**********************
@@ -486,6 +486,9 @@ Media Queries
 	font-weight: 700;
 	margin: 0 0px 50px;
 }
+	.our-team img {
+		height: auto;
+	}
 	.customer-list p , .commitment-list p, .training-list p, 
 	.going-list p, .organization-list p {
 		flex-wrap: wrap;
