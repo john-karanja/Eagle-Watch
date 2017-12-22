@@ -69,6 +69,21 @@ Carousel
 	height: ;
 	background-position: 100% 20%;
 }
+.carousel-item.fourth-img{
+	background: -webkit-linear-gradient(left, rgba(16, 20, 97,0.45), rgba(16, 20, 97,0.45)), url(../images/eagle_watch/Batian_Office_Karatina_edited.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: ;
+	background-position: 100% 0%;
+}
+.carousel-item.fifth-img{
+	background: -webkit-linear-gradient(left, rgba(16, 20, 97,0.45), rgba(16, 20, 97,0.45)), url(../images/eagle_watch/edited/Nairobi_Office_1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: ;
+	background-position: 100% 0%;
+}
+
 .carousel-caption {
 	display: flex;
 	flex-direction: column;
@@ -356,6 +371,10 @@ img {
 .who-we-are-pics img, .core-cards img{
 	min-height: auto;
 }
+.our-team img {
+	min-height: 370px;
+	margin-top: 10px;
+}
 /**********************
 Cards and Shadows
 ***********************/
@@ -384,6 +403,7 @@ Cards and Shadows
 	height: auto;
 	transition: .3s;
 }
+
 .vision .section-heading {
 	top: 15.0526315789%;
 	right: 20.3684210526%;
@@ -400,6 +420,11 @@ Cards and Shadows
 	top: -21.0526315789%;
 	right: 10%;
 }
+.cost .col-lg-4 img {
+	height: 470px;
+	width: auto;
+}
+
 /**********************
 Transitions
 ***********************/
